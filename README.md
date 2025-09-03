@@ -12,23 +12,23 @@ The project is structured into three core phases, each a significant milestone:
 
 ## 🌐 Phase 1: Pre-Training GPT-2 on Tiny Stories Dataset
 
-1. Imported Libraries and Modules like **TransformerBlockClass** which has the implementation from scratch of all classes and **All_Functions** which has functions of training and generate code and evaluation model.
-2. Load Tiny Stories Dataset from Kaggle it has over 2M rows so I sampled 5k rows to train on them.
-3. Preprocessing the text by removing special characters and normalizing whitespace and and Generates a word cloud to visualize the most frequent words in the stories.
-4. Tokenized the text using **tiktoken** and Defined custom Dataset and DataLoader classes for efficient batching.
-5. Trained the model by custom GPT-2 architecture and using the **train_model** function with  functions for generating text and evaluating model performance from All_Functions module.
-7. Visualizing the training and validation loss curves during model training to monitor model performance.
+   1. Imported Libraries and Modules like **TransformerBlockClass** which has the implementation from scratch of all classes and **All_Functions** which has functions of training and generate code and evaluation model.
+   2. Load Tiny Stories Dataset from Kaggle it has over 2M rows so I sampled 5k rows to train on them.
+   3. Preprocessing the text by removing special characters and normalizing whitespace and and Generates a word cloud to visualize the most frequent words in the stories.
+   4. Tokenized the text using **tiktoken** and Defined custom Dataset and DataLoader classes for efficient batching.
+   5. Trained the model by custom GPT-2 architecture and using the **train_model** function with  functions for generating text and evaluating model performance from All_Functions module.
+   7. Visualizing the training and validation loss curves during model training to monitor model performance.
 
 
 
 ## ⚡ Phase 2: Fine-Tuning with Unsloth 
 
-1. Installed required dependencies like Unsloth and Datasets to enable efficient fine-tuning and data handling.
-2. Loaded the base model **meta-llama-3.1-8b** with applying LoRA and the custom dataset for instruction tuning.
-3. Preprocessed and tokenized the dataset, formatting it into instruction–response pairs suitable for the model’s sequence length.
-4. Fine-tuned the model using Unsloth’s training pipeline, monitoring training metrics.
-5. Saved the fine-tuned model and tokenizer locally and pushed to Hugging Face for later usage and deployment .
-6. Performed testing and evaluation by loading the saved model and running sample prompts to verify performance.
+   1. Installed required dependencies like Unsloth and Datasets to enable efficient fine-tuning and data handling.
+   2. Loaded the base model **meta-llama-3.1-8b** with applying LoRA and the custom dataset for instruction tuning.
+   3. Preprocessed and tokenized the dataset, formatting it into instruction–response pairs suitable for the model’s sequence length.
+   4. Fine-tuned the model using Unsloth’s training pipeline, monitoring training metrics.
+   5. Saved the fine-tuned model and tokenizer locally and pushed to Hugging Face for later usage and deployment .
+   6. Performed testing and evaluation by loading the saved model and running sample prompts to verify performance.
 
 ## 🌐 Phase 3: Live Interactive Demo (Colab Deployment)
 
