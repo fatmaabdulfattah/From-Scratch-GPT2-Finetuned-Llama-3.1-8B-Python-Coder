@@ -54,5 +54,5 @@ The beauty of this setup is that anyone can run a live instance of this app in u
 4.  **Run the rest of the cells:** The second cell will start the server and print a public URL (e.g., `https://abc123.ngrok.io`).
 5.  **Click the URL!** Your personal instance of the Llama Code Generator is now live and ready to use.
 
-**👉 [Watch the Video Demo](./Phase_3_Interactive_Demo/demo_recording.mp4)**
+**👉 [Watch the Video Demo](./Demo.mp4)**
 *(A direct link to a screen recording of the app working)*
